@@ -1,0 +1,2 @@
+include ':app', ':module_base', ':lib_widget', ':lib_util', ':lib_http', ':module_app_update'
+rootProject.name='Component'

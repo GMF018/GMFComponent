@@ -1,0 +1,18 @@
+ext {
+    //版本控制
+    android = [
+            compileSdkVersion: 29,
+            applicationId    : 'com.gmf.component',
+            minSdkVersion    : 19,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : 'v 1.0.0'
+    ]
+    //android 本地库
+    dependencies = [
+            appcompat       : 'androidx.appcompat:appcompat:1.0.2',
+            constraintlayout: 'androidx.constraintlayout:constraintlayout:1.1.3'
+    ]
+    //第三方库
+    libs = []
+}
