@@ -3,6 +3,7 @@ def version = rootProject.ext.android
 def depend = rootProject.ext.dependencies
 android {
     compileSdkVersion version.compileSdkVersion
+//    resourcePrefix "readerbook_"
     defaultConfig {
         applicationId version.applicationId
         minSdkVersion version.minSdkVersion
