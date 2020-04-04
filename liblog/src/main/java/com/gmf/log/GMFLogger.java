@@ -15,6 +15,7 @@ import com.gmf.log.core.LoggerPrinter;
 
 /**
  * 日志打印
+ * 集成了控制台打印及本地文件打印（默认情况下不打开本地文件打印）
  * gmf
  */
 public class GMFLogger {
@@ -28,15 +29,6 @@ public class GMFLogger {
      */
     public static final int DISK = LoggerPrinter.DISK;
 
-    /**
-     * 服务器
-     */
-    public static final int SERVER = LoggerPrinter.SERVER;
-    /**
-     * 磁盘服务器
-     */
-    public static final int DISK_SERVER = LoggerPrinter.DISK_SERVER;
-
     private GMFLogger() {
     }
 
@@ -46,13 +38,13 @@ public class GMFLogger {
         }
         hasInit = true;
         Logger.init(context);
-        Logger.addLogAdapter(new DiskLogAdapter());//默认开启
+//        Logger.addLogAdapter(new DiskLogAdapter());//默认开启
         CrashHandler.getInstance().register();
     }
 
     /**
-     * 默认之初始化一次
-     * 初始化发送服务端的
+     * 自定义扩展
+     * 比如打印的日志发送到服务端等
      *
      * @param
      */
