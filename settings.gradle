@@ -1,2 +1,2 @@
-include ':app', ':module_base', ':lib_widget', ':lib_util', ':lib_http', ':module_app_update'
+include ':app', ':module_base', ':lib_widget', ':lib_util', ':lib_http', ':module_app_update', ':liblog'
 rootProject.name='Component'
